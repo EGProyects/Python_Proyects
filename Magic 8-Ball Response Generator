@@ -1,0 +1,52 @@
+import random
+name = "Alberto"
+question = "Is player Musiala good?"
+answer= ""
+random_number = random.randint(1,13)
+# print(random_number)
+if question == "":
+  print(name, "need's to provide a question for THE BALL")
+if name != "" and question != "":
+  print("Question:", question)
+  print(name, "asks:", question)
+if random_number == 1 and name != "" and question != "":
+  answer = "Yes - definitely"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 2 and name != "" and question != "":
+  answer = "It is decidedly so"
+  print("Magic 8-Ball's answer:", answer) 
+elif random_number == 3 and name != "" and question != "":
+  answer = "Without a doubt"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 4 and name != "" and question != "":
+  answer = "Reply hazy, try again"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 5 and name != "" and question != "":
+  answer = "Ask again later"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 6 and name != "" and question != "":
+  answer = "Better not tell you now"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 7 and name != "" and question != "":
+  answer = "My sources say no"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 8 or name == "" and question != "":
+  answer = "Outlook not so good"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 9 and name != "" and question != "":
+  answer = "Very doubtful"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 10 and name != "" and question != "":
+  answer = "Brother, you need to call your mother"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 11 and name != "" and question != "":
+  answer = "Oh... no..."
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 12 and name != "" and question != "":
+  answer = "YOU ARE LUCKY ASF"
+  print("Magic 8-Ball's answer:", answer)
+elif random_number == 13 and name != "" and question != "":
+  answer = "YOU ARE DOOMED"
+  print("Magic 8-Ball's answer:", answer)
+else:
+  print("Error")
