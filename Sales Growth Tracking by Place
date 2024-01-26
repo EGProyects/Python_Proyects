@@ -1,0 +1,17 @@
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+scoops_sold = 0
+ice_cream_selling = []
+for location in sales_data:
+  print(location)
+  for place in location:
+    scoops_sold += place
+    print('Scoops sold so far: ', scoops_sold)
+    ice_cream_selling.append(scoops_sold)
+print('Total scoops sold: ', scoops_sold)
+print(ice_cream_selling)
+place_a = ice_cream_selling[2]
+place_b = ice_cream_selling[5] - place_a
+place_c = ice_cream_selling[8] - place_a - place_b
+print('Scoops sold for place 1:', place_a)
+print('Scoops sold for place 1:', place_b)
+print('Scoops sold for place 1:', place_c)
