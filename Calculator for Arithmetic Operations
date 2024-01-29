@@ -1,0 +1,20 @@
+number_01 = float(input("Type in the first number for your operation: "))
+number_02 = float(input("Type in the second number for your operation: "))
+operation = input("Type in the operation you wish to process (+, -, /, *, **, //, %): ")
+
+if operation == "+":
+    print("Sum of numbers: ", number_01 + number_02)
+elif operation == "-":
+    print("Substraction of numbers: ", number_01 - number_02)
+elif operation == "*":
+    print("Multiplication of numbers: ", number_01 * number_02)
+elif operation == "/":
+    print("Division of numbers: ", number_01 / number_02)
+elif operation == "//":
+    print("Floor division of numbers: ", number_01 // number_02)
+elif operation == "%":
+    print("Module or residue of numbers: ", number_01 % number_02)
+elif operation == "**":
+    print("Power of numbers: ", number_01 ** number_02)
+else:
+    print("Please type one of the operations presented before.")
