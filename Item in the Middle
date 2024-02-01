@@ -1,0 +1,11 @@
+import statistics
+def middle_element(my_list):
+  if len(my_list) % 2 != 0:
+    index = int((len(my_list))/2)
+    return my_list[index]
+  elif len(my_list) % 2 == 0:
+    index = int((len(my_list))/2)
+    list1 = [my_list[index], my_list[index - 1]]
+    return statistics.mean(list1)
+
+print(middle_element([3, 10, 5, 2, -10, -4, 4, 5]))
