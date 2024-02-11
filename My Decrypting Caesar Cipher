@@ -1,0 +1,12 @@
+list_alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+list_code = 'xuo jxuhu! jxyi yi qd unqcfbu ev q squiqh syfxuh. muhu oek qrbu je tusetu yj? y xefu ie! iudt cu q cuiiqwu rqsa myjx jxu iqcu evviuj!'
+list_decoded = []
+for a in list_code:
+    if a in list_alphabet:   
+        if a != ' ' and list_alphabet.index(a) >= 16:
+            list_decoded.append((list_alphabet[list_alphabet.index(a) - 16]))
+        elif a != ' ' and list_alphabet.index('a') < 16:
+            list_decoded.append((list_alphabet[list_alphabet.index(a) - 16]))
+    else:
+        list_decoded.append(a)
+print(''.join(list_decoded))
