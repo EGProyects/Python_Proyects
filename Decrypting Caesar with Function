@@ -1,0 +1,12 @@
+def caesar_decode(coded_message, offset):
+    name_decoded_msg = []
+    for a in coded_message:
+        if a in list_alphabet:   
+            if a != ' ' and list_alphabet.index(a) >= offset:
+                name_decoded_msg.append((list_alphabet[list_alphabet.index(a) - offset]))
+            elif a != ' ' and list_alphabet.index('a') < offset:
+                name_decoded_msg.append((list_alphabet[list_alphabet.index(a) - offset]))
+        else:
+            name_decoded_msg.append(a)
+    return ''.join(name_decoded_msg)
+print(caesar_decode(list_code, 16))
