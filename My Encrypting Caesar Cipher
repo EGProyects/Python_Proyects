@@ -1,0 +1,12 @@
+list_alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+list_code = 'hey there! this is an example of a caesar cipher. were you able to decode it? i hope so! send me a message back with the same offset!'
+def caesar_encode(coded_message, offset):
+    coded_msg = []
+    for a in coded_message:
+        if a in list_alphabet:   
+            if a != ' ':
+                coded_msg.append((list_alphabet[list_alphabet.index(a) + offset- 26]))
+        else:
+            coded_msg.append(a)
+    return ''.join(coded_msg)
+print(caesar_encode(list_code, 16))
