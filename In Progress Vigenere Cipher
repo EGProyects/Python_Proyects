@@ -1,0 +1,22 @@
+list_alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+decoding_index = []
+coded_index = []
+decoded_index = []
+decoded_msg = []
+def vigenere_decoder(coded_list, magic_word):
+    for i in magic_word:
+        if i != ' ':
+            decoding_index.append(list_alphabet.index(i))
+    for b in coded_list:
+        if b != ' ':
+            coded_index.append(list_alphabet.index(b))
+        else:
+            coded_index.append(b)
+    for c in decoding_index:
+        for d in coded_index:
+            if c != ' ' and d != ' ':
+                decoded_index.append(c - d)
+vigenere_decoder('bbb aa a', 'dog')
+print(decoding_index)
+print(coded_index)
+print(decoded_index)
