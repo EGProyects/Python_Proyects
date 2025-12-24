@@ -1,0 +1,10 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        n = 0
+        two_nums = []
+        while nums[n] + nums[n + 1] != target:
+            n += 1
+        else: 
+            two_nums.append(n)
+            two_nums.append(n + 1)
+        return two_nums   
